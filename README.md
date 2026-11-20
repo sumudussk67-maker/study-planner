@@ -47,7 +47,7 @@ I read the expo-notifications documentation and learned that a notification hand
 ## 8. Run locally
 ```bash
 git clone https://github.com/sumudussk67-maker/study-planner.git
-cd YOUR_REPO_NAME
+cd sumudussk67-maker
 npm install --legacy-peer-deps
 npx expo start
 ```
