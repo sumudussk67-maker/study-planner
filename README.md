@@ -3,7 +3,8 @@
 **Name:** G.G.SAMANTHA SUMUDU KUMARI GUNAWARDANA  
 **Student ID:** MSC_CS_2025_023  
 **Course:** COSC 64173 Mobile Computing, Assignment 01  
-**Demo video:** YOUR VIDEO LINK
+**Demo video:** https://youtu.be/ZxxvmOHg8Z0
+
 
 ## 1. What is the app?
 Study Planner is a calendar-based planner for university students. The home screen shows a monthly calendar; tapping a date shows the assignments, exams, due dates, reminders, study sessions and meetings planned for that day. Users can add, edit, delete and complete events, and get a local notification reminder at the event time. It solves the problem of forgetting deadlines and not knowing what is due when.
