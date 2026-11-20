@@ -30,7 +30,10 @@ export default function Home() {
         keyExtractor={(e) => e.id}
         ListHeaderComponent={
           <>
-            <Image source={{ uri: 'https://placehold.co/800x180/0B4F5C/FFFFFF/png?text=Study+Planner' }} style={s.hero} />
+            <View>
+  <Image source={require('../../assets/banner.jpg')} style={s.hero} resizeMode="cover" />
+  <View style={s.heroShade}><Text style={s.heroText}>Study Planner</Text></View>
+</View>
             <Calendar selected={selected} onSelect={setSelected} events={events} />
             <Text style={s.h}>{prettyDate(selected)}</Text>
           </>
@@ -49,8 +52,10 @@ export default function Home() {
 
 const s = StyleSheet.create({
   screen: { flex: 1, backgroundColor: C.bg },
-  hero: { height: 90, width: '100%' },
-  banner: { backgroundColor: C.turmeric, padding: 10 },
+  hero: { height: 110, width: '100%' },
+  heroShade: { ...StyleSheet.absoluteFillObject, backgroundColor: 'rgba(11,79,92,0.55)', justifyContent: 'center', alignItems: 'center' },
+  heroText: { color: '#FFFFFF', fontSize: 26, fontWeight: '800' },
+    banner: { backgroundColor: C.turmeric, padding: 10 },
   bannerText: { textAlign: 'center', fontWeight: '600', color: C.ink },
   h: { fontSize: 18, fontWeight: '700', color: C.ink, marginHorizontal: 16, marginBottom: 10 },
   empty: { textAlign: 'center', color: C.mute, marginTop: 20, paddingHorizontal: 30 },
