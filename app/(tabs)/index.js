@@ -1,5 +1,5 @@
+import { useState } from 'react';
 import { View, Text, FlatList, Pressable, Image, StyleSheet } from 'react-native';
-import { View, Text, FlatList, Pressable, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { usePlanner } from '../../context/PlannerContext';
@@ -29,7 +29,8 @@ export default function Home() {
         data={dayEvents}
         keyExtractor={(e) => e.id}
         ListHeaderComponent={
-          <Image source={{ uri: 'https://placehold.co/800x180/0B4F5C/FFFFFF/png?text=Study+Planner' }} style={s.hero} />
+          <>
+            <Image source={{ uri: 'https://placehold.co/800x180/0B4F5C/FFFFFF/png?text=Study+Planner' }} style={s.hero} />
             <Calendar selected={selected} onSelect={setSelected} events={events} />
             <Text style={s.h}>{prettyDate(selected)}</Text>
           </>
@@ -47,8 +48,8 @@ export default function Home() {
 }
 
 const s = StyleSheet.create({
-  hero: { height: 90, width: '100%' },
   screen: { flex: 1, backgroundColor: C.bg },
+  hero: { height: 90, width: '100%' },
   banner: { backgroundColor: C.turmeric, padding: 10 },
   bannerText: { textAlign: 'center', fontWeight: '600', color: C.ink },
   h: { fontSize: 18, fontWeight: '700', color: C.ink, marginHorizontal: 16, marginBottom: 10 },
