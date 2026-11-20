@@ -21,7 +21,7 @@ Study Planner is a calendar-based planner for university students. The home scre
 - **FlatList:** Calendar screen (events of the day) and Upcoming screen, rendering `data/events.js` (15 events)
 - **Modal:** `components/EventFormModal.js` (add and edit), `components/FilterModal.js` (type filter), delete confirmation in `app/event/[id].js`
 - **ScrollView:** event details and the form
-- **Image:** not needed in this design (the calendar and cards are drawn with Views)
+- **Image:** `app/(tabs)/index.js` (header banner on the Calendar screen)
 
 ## 4. Expo Router structure
 ```
